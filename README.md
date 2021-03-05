@@ -4,6 +4,7 @@
 
 ```
 * I didn't try localize the custom validation messages
+* I didn't deploy to Github Pages etc.
 ```
 
 ## Project clone
