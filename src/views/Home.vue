@@ -3,7 +3,7 @@
     <b-row no-gutters>
       <b-col cols="12">
         <div
-          v-for="(item, index) in 5"
+          v-for="(item, index) in 10"
           :key="index"
           class="content-item mb-3 p-3"
         >

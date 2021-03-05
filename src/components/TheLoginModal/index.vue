@@ -48,7 +48,7 @@
           rules="required"
           v-slot="{ errors }"
           tag="div"
-          class="mb-4"
+          class="mb-2"
         >
           <p class="mb-1 text-secondary">{{ $t("login-modal.password") }}</p>
           <input

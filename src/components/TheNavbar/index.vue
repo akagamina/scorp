@@ -7,28 +7,35 @@
         >
       </b-navbar-brand>
 
-      <b-navbar-nav>
-        <b-nav-item to="/home">{{ $t("navbar.homePage") }}</b-nav-item>
-        <b-nav-item to="/contact-us">
-          {{ $t("navbar.contactUsPage") }}
-        </b-nav-item>
-      </b-navbar-nav>
-
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav>
+          <b-nav-item to="/">{{ $t("navbar.homePage") }}</b-nav-item>
+          <b-nav-item to="/contact-us">
+            {{ $t("navbar.contactUsPage") }}
+          </b-nav-item>
+        </b-navbar-nav>
         <b-navbar-nav class="ml-auto">
-          <select
-            class="px-2 py-sm-2 py-1"
-            v-model="$i18n.locale"
-            @change="handleChangeLocale($event.target.value)"
+          <div
+            class="custom-select p-0 d-flex justify-content-center align-items-center h-100 mb-sm-0 mb-3"
           >
-            <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">
-              {{ lang }}
-            </option>
-          </select>
+            <select
+              class="px-2 py-sm-2 py-1"
+              v-model="$i18n.locale"
+              @change="handleChangeLocale($event.target.value)"
+            >
+              <option
+                v-for="(lang, i) in langs"
+                :key="`Lang${i}`"
+                :value="lang"
+              >
+                {{ lang }}
+              </option>
+            </select>
+          </div>
 
-          <b-nav-item-dropdown right v-if="isUserLoggedIn">
+          <b-nav-item-dropdown right v-if="isUserLoggedIn" class="ml-3">
             <template #button-content>
               {{ getUser.name }}
             </template>
@@ -133,6 +140,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.custom-select {
+  border: 1px solid #ccc;
+  width: 120px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #fafafa no-repeat 90% 50%;
+  select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+  }
+  @media (max-width: 575.7px) {
+    width: 100%;
+  }
+}
+
+.custom-select .custom-select select:focus {
+  outline: none;
+}
 .login-btn {
   border: 0.5px solid rgb(173, 165, 165);
   border-radius: 4px;

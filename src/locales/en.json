@@ -22,5 +22,32 @@
   },
   "footer": {
     "text": "Developed by Omer Dogan for Scorp"
-  }
+  },
+  "contact-us": {
+    "title": "Contact Us",
+    "name": "Name",
+    "namePlaceholder": "Type your name",
+    "email": "Email",
+    "emailPlaceholder": "Type your email",
+    "phone": "Phone number",
+    "phonePlaceholder": "Type your phone",
+    "contactButton": "Send Us",
+    "countryName": "Country",
+    "countryPlaceholder": "Select country"
+  },
+  "fields": {
+    "email": "Contact Us",
+    "name": "Name",
+    "namePlaceholder": "Type your name"
+  },
+  "countryList": [
+    { "id": "TR", "name": "Turkey" },
+    { "id": "US", "name": "United States of America" },
+    { "id": "GB", "name": "United Kingdom" },
+    { "id": "DE", "name": "Germany" },
+    { "id": "SE", "name": "Sweden" },
+    { "id": "KE", "name": "Kenya" },
+    { "id": "BR", "name": "Brazil" },
+    { "id": "ZW", "name": "Zimbabwe" }
+  ]
 }

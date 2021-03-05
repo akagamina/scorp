@@ -22,5 +22,27 @@
   },
   "footer": {
     "text": "Ömer Doğan tarafından Scorp için geliştirilmiştir"
-  }
+  },
+  "contact-us": {
+    "title": "Bizimle iletişime geç",
+    "name": "İsim",
+    "namePlaceholder": "İsminizi giriniz",
+    "email": "Email",
+    "emailPlaceholder": "Email adresinizi giriniz",
+    "phone": "Phone number",
+    "phonePlaceholder": "Telefon numaranızı giriniz",
+    "contactButton": "Gönder",
+    "countryName": "Ülke",
+    "countryPlaceholder": "Ülke Seçiniz"
+  },
+  "countryList": [
+    { "id": "TR", "name": "Türkiye" },
+    { "id": "US", "name": "Amerika Birleşik Devletleri" },
+    { "id": "GB", "name": "İngiltere" },
+    { "id": "DE", "name": "Almanya" },
+    { "id": "SE", "name": "İsveç" },
+    { "id": "KE", "name": "Kenya" },
+    { "id": "BR", "name": "Brezilya" },
+    { "id": "ZW", "name": "Zimbabwe" }
+  ]
 }
